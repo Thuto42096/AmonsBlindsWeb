@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,200&display=swap');
+
+*{
+    margin:  auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background: (#f2f2f2);
+
+}
+:root{
+    --primary-color: #9c95ff;
+    --secondary-color: #83ecff;
+    --tertiary-color: #3C3C47;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #B0B0B0;
+
+    --font-size-s: 12px;
+    --font-size-m: 14px;
+    --font-size-l: 16px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 30px;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 16px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1300px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    position: relative;
+    top: auto
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.section-content{
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-between;
+}
+header{
+    background: #3f3f3f;
+}
+header .navbar {
+
+    padding: 10px;
+}
+
+.navbar .nav-logo .logo-text{
+    font-size: var(--font-size-xl);
+    font-weight: 800;
+    color: #000000;
+}
+.navbar .nav-menu{
+    display: flex;
+    gap: 20px;
+}
+.navbar .nav-menu .nav-link{
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-regular);
+    border-radius: var(--border-radius-m);
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    background: #f2f2f2;
+    color: #3f3f3f;
+}
+
+.homepage{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage .text{
+    color:#3f3f3f;
+    text-align: center;
+    z-index: 2;
+    
+}
+.homepage .text h1{
+    font-size: var(--font-size-xxl);
+    font-weight: (900);
+    margin-bottom: 20px;
+}
+.homepage .text p{
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: 70px;
+}
+
+.text {
+    height: 450px;
+    align-items: center;
+    justify-self: center;
+}
+.homepage a{
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-regular);
+    border-radius: var(--border-radius-m);
+    border: 2px solid var(--white);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.homepage a:hover{
+    background: var(--white);
+    color: var(--black);
+}
+section{
+    padding-top: 80px ;
+    padding-bottom: 80px;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+section h2{
+    font-size: 2rem;
+}
+section .cards{
+    margin-top: 50px;
+    display: flex;
+
+}
+section .card{
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+    list-style: none;
+    background-color: #FFFFFF;
+    padding: 40px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    margin-bottom: 40px;
+
+}
+
+section .card img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    
+
+}
+section .card img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+section .card p{
+    margin-top: 5px;
+
+}
+.homepage {
+    transition:  1s ease-in-out;
+
+    position: relative;
+}
+.homepage-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* dark overlay for readability */
+    z-index: 1;
+}
+.homepage .text {
+    position: relative;
+    z-index: 2;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.team .team-member {
+    width: auto;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: var(--border-radius-m);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+.team .team-member img {
+    height: 300px;
+    width: 300px;
+    border-radius: var(--border-radius-m);
+    margin-bottom: 15px;
+}
+.team .team-member img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.team .team-member h3 {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 10px;
+}
+.team .team-member p {
+    font-size: var(--font-size-m);
+    color: var(--gray);
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.contact h2 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 20px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social-icons svg {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.social-icons a:hover svg {
+    transform: scale(1.1);
+}
+.contact form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+}
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+.contact form button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: var(--font-size-m);
+    border: none;
+    border-radius: var(--border-radius-m);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact form button:hover {
+    background-color: var(--secondary-color);
+}
+.contact-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact-info p {
+    font-size: var(--font-size-m);
+    color: var(--gray);
+}
